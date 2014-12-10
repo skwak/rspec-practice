@@ -27,6 +27,7 @@ RSpec.describe UsersController, :type => :controller do
 
     it "assign the user id to session" do
       request
+      expect(session[:user_id]).to eq assigns(:user).id
     end
   end
 end
