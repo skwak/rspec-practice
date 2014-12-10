@@ -12,7 +12,6 @@ RSpec.describe User, :type => :model do
       user.email = "batexample.com"
       expect(user.valid?).to eq false
     end
-
-      
+  
   end
 end
